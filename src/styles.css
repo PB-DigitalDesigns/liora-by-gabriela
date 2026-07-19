@@ -120,18 +120,18 @@
 @utility btn-editorial-terracotta {
   background: var(--terracotta);
   color: var(--cream);
-}
-@utility btn-editorial-terracotta:hover {
-  background: var(--terracotta-deep);
-  transform: translateY(-1px);
+  &:hover {
+    background: var(--terracotta-deep);
+    transform: translateY(-1px);
+  }
 }
 @utility btn-editorial-olive {
   background: var(--olive-deep);
   color: var(--cream);
-}
-@utility btn-editorial-olive:hover {
-  background: #2c3b2c;
-  transform: translateY(-1px);
+  &:hover {
+    background: #2c3b2c;
+    transform: translateY(-1px);
+  }
 }
 
 @keyframes fade-up {
