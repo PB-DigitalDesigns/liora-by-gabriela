@@ -10,33 +10,76 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as ServicesWebsiteDesignRouteImport } from './routes/services.website-design'
+import { Route as ServicesSupportRouteImport } from './routes/services.support'
+import { Route as ServicesDigitalDesignsRouteImport } from './routes/services.digital-designs'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ServicesWebsiteDesignRoute = ServicesWebsiteDesignRouteImport.update({
+  id: '/services/website-design',
+  path: '/services/website-design',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ServicesSupportRoute = ServicesSupportRouteImport.update({
+  id: '/services/support',
+  path: '/services/support',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ServicesDigitalDesignsRoute = ServicesDigitalDesignsRouteImport.update({
+  id: '/services/digital-designs',
+  path: '/services/digital-designs',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/services/digital-designs': typeof ServicesDigitalDesignsRoute
+  '/services/support': typeof ServicesSupportRoute
+  '/services/website-design': typeof ServicesWebsiteDesignRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/services/digital-designs': typeof ServicesDigitalDesignsRoute
+  '/services/support': typeof ServicesSupportRoute
+  '/services/website-design': typeof ServicesWebsiteDesignRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/services/digital-designs': typeof ServicesDigitalDesignsRoute
+  '/services/support': typeof ServicesSupportRoute
+  '/services/website-design': typeof ServicesWebsiteDesignRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/services/digital-designs'
+    | '/services/support'
+    | '/services/website-design'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/services/digital-designs'
+    | '/services/support'
+    | '/services/website-design'
+  id:
+    | '__root__'
+    | '/'
+    | '/services/digital-designs'
+    | '/services/support'
+    | '/services/website-design'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  ServicesDigitalDesignsRoute: typeof ServicesDigitalDesignsRoute
+  ServicesSupportRoute: typeof ServicesSupportRoute
+  ServicesWebsiteDesignRoute: typeof ServicesWebsiteDesignRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,22 +91,36 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/services/website-design': {
+      id: '/services/website-design'
+      path: '/services/website-design'
+      fullPath: '/services/website-design'
+      preLoaderRoute: typeof ServicesWebsiteDesignRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/services/support': {
+      id: '/services/support'
+      path: '/services/support'
+      fullPath: '/services/support'
+      preLoaderRoute: typeof ServicesSupportRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/services/digital-designs': {
+      id: '/services/digital-designs'
+      path: '/services/digital-designs'
+      fullPath: '/services/digital-designs'
+      preLoaderRoute: typeof ServicesDigitalDesignsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  ServicesDigitalDesignsRoute: ServicesDigitalDesignsRoute,
+  ServicesSupportRoute: ServicesSupportRoute,
+  ServicesWebsiteDesignRoute: ServicesWebsiteDesignRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
-
-import type { getRouter } from './router.tsx'
-import type { startInstance } from './start.ts'
-declare module '@tanstack/react-start' {
-  interface Register {
-    ssr: true
-    router: Awaited<ReturnType<typeof getRouter>>
-    config: Awaited<ReturnType<typeof startInstance.getOptions>>
-  }
-}
