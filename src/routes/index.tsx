@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { MosaicDivider } from "@/components/liora/MosaicDivider";
 import { BotanicalBg } from "@/components/liora/BotanicalBg";
@@ -246,14 +246,17 @@ const services = [
   {
     title: "Website Design",
     body: "Custom websites designed to give your business a professional online presence. From layout and design to creating a seamless user experience, each website is built to reflect your brand and connect with your audience.",
+    to: "/services/website-design" as const,
   },
   {
     title: "Digital Designs",
     body: "Creative digital materials designed to help your business stand out, including flyers, menus, promotional graphics, QR codes, and other digital assets.",
+    to: "/services/digital-designs" as const,
   },
   {
     title: "Support",
     body: "Ongoing support to keep your digital presence updated and effective. Whether you need website updates, menu changes, new promotional materials, or small design adjustments, Liora is here to help your business evolve.",
+    to: "/services/support" as const,
   },
 ];
 
@@ -296,9 +299,9 @@ function Services() {
                 {s.body}
               </p>
               <div className="mt-8">
-                <a href="#contact" className="btn-editorial btn-editorial-terracotta">
+                <Link to={s.to} className="btn-editorial btn-editorial-terracotta">
                   Learn More
-                </a>
+                </Link>
               </div>
             </article>
           </Reveal>
