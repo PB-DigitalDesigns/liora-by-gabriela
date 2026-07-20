@@ -29,7 +29,7 @@ export function BotanicalBg({ className = "" }: { className?: string }) {
         absolute
         -right-56
         top-28
-        w-[700px]
+        w-[800px]
         scale-x-[-1]
         rotate-[-20deg]
         opacity-20
