@@ -5,19 +5,67 @@ export function BotanicalBg({ className = "" }: { className?: string }) {
     <div
       className={`pointer-events-none absolute inset-0 overflow-hidden ${className}`}
     >
-      {/* Left lily */}
+      {/* Desktop Left */}
       <img
         src={lily}
         alt=""
-        className="absolute -left-40 top-4 w-[520px] opacity-18"
+        className="
+          hidden lg:block
+          absolute
+          -left-44
+          top-0
+          w-[560px]
+          opacity-20
+          select-none
+        "
       />
 
-      {/* Right lily */}
+      {/* Desktop Right */}
       <img
         src={lily}
         alt=""
-        className="absolute -right-40 top-10 w-[520px] scale-x-[-1] opacity-18"
-        />    
-      </div>
+        className="
+          hidden lg:block
+          absolute
+          -right-44
+          top-16
+          w-[560px]
+          scale-x-[-1]
+          opacity-20
+          select-none
+        "
+      />
+
+      {/* Mobile Top */}
+      <img
+        src={lily}
+        alt=""
+        className="
+          lg:hidden
+          absolute
+          -left-28
+          -top-10
+          w-[340px]
+          opacity-20
+          select-none
+        "
+      />
+
+      {/* Mobile Bottom */}
+      <img
+        src={lily}
+        alt=""
+        className="
+          lg:hidden
+          absolute
+          -right-24
+          bottom-[-80px]
+          w-[300px]
+          scale-x-[-1]
+          opacity-15
+          select-none
+        "
+      />
+    </div>
   );
 }
