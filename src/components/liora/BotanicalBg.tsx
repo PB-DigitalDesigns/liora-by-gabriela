@@ -14,7 +14,7 @@ export function BotanicalBg({ className = "" }: { className?: string }) {
           absolute
           -left-44
           top-0
-          w-[560px]
+          w-[700px]
           opacity-20
           select-none
         "
@@ -29,7 +29,7 @@ export function BotanicalBg({ className = "" }: { className?: string }) {
           absolute
           -right-44
           top-16
-          w-[560px]
+          w-[700px]
           scale-x-[-1]
           opacity-20
           select-none
