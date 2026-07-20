@@ -3,7 +3,7 @@ import lily from "@/assets/lily-line-art.png";
 export function BotanicalBg({ className = "" }: { className?: string }) {
   return (
     <div
-      className={`pointer-events-none absolute inset-0 overflow-hidden ${className}`}
+      className={`pointer-events-none absolute inset-0 overflow-visible ${className}`}
     >
       {/* Desktop Left */}
       <img
