@@ -7,31 +7,56 @@ export function BotanicalBg({ className = "" }: { className?: string }) {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g stroke="#D97D49" strokeWidth="1" opacity="0.35" fill="none" strokeLinecap="round">
-        {/* left lily stem */}
-        <path d="M40 500 C 60 380, 90 300, 130 220" />
-        <path d="M130 220 C 100 210, 80 195, 75 175" />
-        <path d="M130 220 C 160 210, 175 195, 180 175" />
-        <path d="M100 380 C 80 375, 65 365, 60 350" />
-        <path d="M120 300 C 145 295, 160 285, 165 270" />
-        {/* flower */}
-        <ellipse cx="130" cy="180" rx="6" ry="14" transform="rotate(-30 130 180)" />
-        <ellipse cx="140" cy="175" rx="6" ry="14" transform="rotate(15 140 175)" />
-        <ellipse cx="120" cy="175" rx="6" ry="14" transform="rotate(-70 120 175)" />
-        <ellipse cx="135" cy="190" rx="6" ry="14" transform="rotate(60 135 190)" />
-        <circle cx="130" cy="182" r="3" />
+      <g
+        stroke="#8B9073"
+        strokeWidth="1.2"
+        opacity="0.12"
+        fill="none"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
+        {/* LEFT LILY — delicate editorial line art */}
 
-        {/* right lily stem */}
-        <path d="M760 560 C 720 420, 690 340, 660 260" />
-        <path d="M660 260 C 690 250, 705 235, 710 215" />
-        <path d="M660 260 C 630 250, 615 235, 610 215" />
-        <path d="M710 440 C 730 435, 740 425, 745 410" />
-        <path d="M690 340 C 665 335, 650 325, 645 310" />
-        <ellipse cx="660" cy="220" rx="6" ry="14" transform="rotate(30 660 220)" />
-        <ellipse cx="650" cy="215" rx="6" ry="14" transform="rotate(-15 650 215)" />
-        <ellipse cx="670" cy="215" rx="6" ry="14" transform="rotate(70 670 215)" />
-        <ellipse cx="655" cy="230" rx="6" ry="14" transform="rotate(-60 655 230)" />
-        <circle cx="660" cy="222" r="3" />
+        {/* stem */}
+        <path d="M85 560 C95 450 115 340 165 235" />
+
+        {/* leaves */}
+        <path d="M120 390 C80 370 55 340 60 310 C95 330 120 350 120 390" />
+        <path d="M145 315 C180 285 205 250 205 220 C170 235 150 260 145 315" />
+
+        {/* lily flower petals */}
+        <path d="M165 235 C135 220 120 185 135 150 C155 170 165 200 165 235" />
+        <path d="M165 235 C155 190 165 145 190 120 C205 165 195 205 165 235" />
+        <path d="M165 235 C205 215 235 185 230 145 C195 155 175 190 165 235" />
+        <path d="M165 235 C125 230 100 210 95 175 C125 180 150 200 165 235" />
+
+        {/* lily center */}
+        <path d="M160 230 C165 225 170 225 175 230" />
+        <circle cx="168" cy="228" r="2" />
+
+        {/* RIGHT LILY */}
+
+        {/* stem */}
+        <path d="M715 600 C700 470 675 360 630 255" />
+
+        {/* leaves */}
+        <path d="M680 420 C730 390 755 350 750 315 C710 340 685 375 680 420" />
+        <path d="M655 330 C620 300 595 260 600 230 C640 250 660 285 655 330" />
+
+        {/* lily flower petals */}
+        <path d="M630 255 C660 235 680 195 665 155 C640 175 630 215 630 255" />
+        <path d="M630 255 C640 205 630 160 600 135 C590 180 600 220 630 255" />
+        <path d="M630 255 C590 240 560 205 570 170 C605 180 625 215 630 255" />
+        <path d="M630 255 C670 250 700 220 705 185 C670 190 645 220 630 255" />
+
+        {/* lily center */}
+        <path d="M625 250 C630 245 635 245 640 250" />
+        <circle cx="633" cy="248" r="2" />
+
+        {/* subtle floating stems */}
+        <path d="M350 80 C370 130 375 180 360 220" opacity="0.5" />
+        <path d="M360 220 C345 205 335 190 335 170" opacity="0.5" />
+        <path d="M360 220 C380 205 390 185 390 165" opacity="0.5" />
       </g>
     </svg>
   );
