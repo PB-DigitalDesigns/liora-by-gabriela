@@ -9,15 +9,15 @@ export function BotanicalBg({ className = "" }: { className?: string }) {
       <img
         src={lily}
         alt=""
-        className="absolute -left-20 top-16 w-[320px] opacity-20"
+        className="absolute -left-40 top-4 w-[520px] opacity-18"
       />
 
       {/* Right lily */}
       <img
         src={lily}
         alt=""
-        className="absolute -right-20 bottom-0 w-[320px] rotate-180 opacity-20"
-      />
-    </div>
+        className="absolute -right-40 top-10 w-[520px] scale-x-[-1] opacity-18"
+        />    
+      </div>
   );
 }
