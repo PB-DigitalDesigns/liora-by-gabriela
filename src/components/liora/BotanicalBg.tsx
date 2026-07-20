@@ -8,7 +8,7 @@ export function BotanicalBg({ className = "" }: { className?: string }) {
       xmlns="http://www.w3.org/2000/svg"
     >
       <g
-        stroke="#"D97D49"
+        stroke="#D97D49"
         strokeWidth="1.5"
         opacity="0.22"
         fill="none"
