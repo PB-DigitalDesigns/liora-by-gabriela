@@ -28,8 +28,8 @@ export function BotanicalBg({ className = "" }: { className?: string }) {
         className="
         hidden lg:block
         absolute
-        -right-56
-        top-18
+        -right-66
+        top-10
         w-[800px]
         scale-x-[-1]
         rotate-[-40deg]
