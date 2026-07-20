@@ -6,7 +6,7 @@ export function BotanicalBg({ className = "" }: { className?: string }) {
       <div
         className={`pointer-events-none absolute top-0 left-0 w-full h-[1000px] overflow-visible ${className}`}
       >    
-      >
+      
       {/* Desktop Left */}
       <img
         src={lily}
