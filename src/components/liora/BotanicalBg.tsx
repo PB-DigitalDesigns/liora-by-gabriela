@@ -20,8 +20,23 @@ export function BotanicalBg({ className = "" }: { className?: string }) {
           select-none
         "
       />
-
-     {/* Desktop Right */}
+      
+      {/* Desktop Left Bottom */}
+      <img
+        src={lily}
+        alt=""
+        className="
+        hidden lg:block
+        absolute
+        -left-56
+        top-[420px]
+        w-[700px]
+        opacity-20
+        select-none
+      "
+    />
+      
+      {/* Desktop Right */}
       <img
         src={lily}
         alt=""
