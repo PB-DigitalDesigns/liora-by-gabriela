@@ -14,7 +14,7 @@ export function BotanicalBg({ className = "" }: { className?: string }) {
           absolute
           -left-44
           top-0
-          w-[800px]
+          w-[700px]
           opacity-20
           select-none
         "
@@ -37,6 +37,24 @@ export function BotanicalBg({ className = "" }: { className?: string }) {
      "
     />
 
+   {/* Desktop Right Bottom */}
+    <img
+      src={lily}
+      alt=""
+      className="
+      hidden lg:block
+      absolute
+      -right-56
+      top-[500px]
+      w-[700px]
+      scale-x-[-1]
+      scale-y-[-1]
+      rotate-[-20deg]
+      opacity-20
+      select-none
+    "
+   />  
+      
       {/* Mobile Top */}
       <img
         src={lily}
