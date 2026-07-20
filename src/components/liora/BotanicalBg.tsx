@@ -20,21 +20,22 @@ export function BotanicalBg({ className = "" }: { className?: string }) {
         "
       />
 
-      {/* Desktop Right */}
+     {/* Desktop Right */}
       <img
         src={lily}
         alt=""
         className="
-          hidden lg:block
-          absolute
-          -right-44
-          top-16
-          w-[700px]
-          scale-x-[-1]
-          opacity-20
-          select-none
-        "
-      />
+        hidden lg:block
+        absolute
+        -right-56
+        top-28
+        w-[700px]
+        scale-x-[-1]
+        rotate-[-20deg]
+        opacity-20
+        select-none
+     "
+    />
 
       {/* Mobile Top */}
       <img
