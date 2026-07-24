@@ -202,7 +202,7 @@ function Projects() {
 
 function About() {
   return (
-    <section id="about" className="relative mt-20 py-20 sm:mt-28 sm:py-28" style={{ backgroundColor: "#A3A670" }}>
+    <section id="about" className="relative mt-0 py-20 sm:py-28" style={{ backgroundColor: "#A3A670" }}>
       <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-5 sm:px-8 lg:grid-cols-2 lg:gap-20">
         <Reveal className="flex justify-center">
           <div className="relative flex aspect-square w-full max-w-md items-center justify-center rounded-[36px] bg-[#faf6f0] p-6 shadow-[0_25px_60px_-25px_rgba(0,0,0,0.35)]">
