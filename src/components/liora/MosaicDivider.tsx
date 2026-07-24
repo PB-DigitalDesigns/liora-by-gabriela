@@ -4,7 +4,7 @@ export function MosaicDivider() {
   return (
     <div
       aria-hidden
-      className="flex justify-center my-16"
+      className="flex justify-center my-6"
     >
       <img
         src={mosaicDivider}
