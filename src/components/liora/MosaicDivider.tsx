@@ -9,7 +9,7 @@ export function MosaicDivider() {
       <img
         src={mosaicDivider}
         alt=""
-        className="w-full max-w-6xl h-auto"
+        className="w-[70%] max-w-3xl h-auto object-contain"
       />
     </div>
   );
