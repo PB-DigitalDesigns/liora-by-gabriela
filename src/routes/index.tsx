@@ -78,7 +78,7 @@ function Navbar() {
 
 function Hero() {
   return (
-   <section id="top" className="relative pt-28 sm:pt-32 lg:pt-36">
+   <section id="top" className="relative pt-20 sm:pt-24 lg:pt-28">
      <BotanicalBg />
       <div className="relative mx-auto grid max-w-7xl grid-cols-1 items-center gap-10 px-5 pb-8 sm:px-8 lg:grid-cols-2 lg:gap-16 lg:pb-12">
         <Reveal className="flex justify-center lg:justify-start">
