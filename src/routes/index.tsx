@@ -204,7 +204,7 @@ function About() {
   return (
    <section
   id="about"
-  className="relative -mt-18 pt-20 pb-20 sm:-mt-16 sm:pt-28 sm:pb-28"
+  className="relative pt-10 pb-20 sm:pt-14 sm:pb-24"
   style={{ backgroundColor: "#A3A670" }}
 >
       <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-5 sm:px-8 lg:grid-cols-2 lg:gap-20">
