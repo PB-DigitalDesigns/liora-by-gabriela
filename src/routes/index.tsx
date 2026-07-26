@@ -476,4 +476,3 @@ function Index() {
     </main>
   );
 }
-mp
