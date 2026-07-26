@@ -1,16 +1,12 @@
-import mosaicDivider from "@/assets/mosaic-divider.PNG";
-
 export function MosaicDivider() {
   return (
     <div
-      aria-hidden
-      className="flex justify-center overflow-visible"
-    >
-      <img
-        src={mosaicDivider}
-        alt=""
-        className="w-[70%] max-w-3xl h-auto object-contain"
-      />
-    </div>
+      role="presentation"
+      className="w-full h-[clamp(46px,6vw,86px)] bg-repeat-x bg-center"
+      style={{
+        backgroundImage: "url('/assets/mosaic-divider.PNG')",
+        backgroundSize: "auto 100%",
+      }}
+    />
   );
 }
