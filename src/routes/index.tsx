@@ -87,7 +87,7 @@ function Hero() {
             <img
               src={lioraLogo}
               alt="Liora by Gabriela logo"
-              className="w-[78%] max-w-[420px] object-contain drop-shadow-[0_25px_45px_rgba(180,90,40,0.25)]"
+              className="w-[90%] max-w-[500px] object-contain drop-shadow-[0_25px_45px_rgba(180,90,40,0.25)]"
               />
           </div>
         </Reveal>
