@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { MosaicDivider } from "@/components/liora/MosaicDivider";
 import { BotanicalBg } from "@/components/liora/BotanicalBg";
-import { LioraWordmark } from "@/components/liora/LioraWordmark";
+import lioraWordmark from "@/assets/liora-wordmark.png";
 import { Reveal } from "@/components/liora/Reveal";
 import lioraLogo from "@/assets/liora-logo.PNG";
 
@@ -23,7 +23,11 @@ function Navbar() {
     <header className="absolute inset-x-0 top-0 z-40">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-5 sm:px-8 sm:py-6">
         <a href="#top" className="flex flex-col leading-none">
-          <LioraWordmark className="text-2xl sm:text-[28px]" color="#3a2a1f" />
+          <img
+  src={lioraWordmark}
+  alt="Liora by Gabriela"
+  className="h-12 w-auto sm:h-14"
+/>
           <span className="mt-1 pl-[2px] text-[10px] uppercase tracking-[0.35em] text-[#6b5a4d]">
             By Gabriela
           </span>
@@ -471,3 +475,4 @@ function Index() {
     </main>
   );
 }
+mp
