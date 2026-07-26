@@ -2,9 +2,9 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { MosaicDivider } from "@/components/liora/MosaicDivider";
 import { BotanicalBg } from "@/components/liora/BotanicalBg";
-import lioraWordmark from "@/assets/liora-wordmark.png";
+import { lioraWordmark } from "@/assets/liora-wordmark.png";
 import { Reveal } from "@/components/liora/Reveal";
-import lioraLogo from "@/assets/liora-logo.PNG";
+import { lioraLogo } from "@/assets/liora-logo.PNG";
 
 export const Route = createFileRoute("/")({
   component: Index,
