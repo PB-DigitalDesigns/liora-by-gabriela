@@ -83,19 +83,12 @@ function Hero() {
      <BotanicalBg />
       <div className="relative mx-auto grid max-w-7xl grid-cols-1 items-center gap-10 px-5 pb-16 sm:px-8 lg:grid-cols-2 lg:gap-16 lg:pb-24">
         <Reveal className="flex justify-center lg:justify-start">
-          <div
-            className="relative flex aspect-square w-[78%] max-w-[420px] items-center justify-center rounded-full shadow-[0_25px_60px_-25px_rgba(180,90,40,0.55)]"
-            style={{ backgroundColor: "#D97D49" }}
-          >
-            <div className="absolute inset-3 rounded-full border border-[#faf6f0]/40" />
-            <div className="flex flex-col items-center leading-none text-[#2a1e15]">
-              <span className="font-display text-[64px] sm:text-[84px] text-[#2a1e15]">
-                Liora
-              </span>
-              <span className="mt-3 text-[10px] uppercase tracking-[0.45em] text-[#2a1e15]/80">
-                By Gabriela
-              </span>
-            </div>
+          <div className="relative flex justify-center lg:justify-start">
+            <img
+              src={lioraLogo}
+              alt="Liora by Gabriela logo"
+              className="w-[78%] max-w-[420px] object-contain drop-shadow-[0_25px_45px_rgba(180,90,40,0.25)]"
+              />
           </div>
         </Reveal>
 
