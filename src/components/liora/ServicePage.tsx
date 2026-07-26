@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "@tanstack/react-router";
 import { BotanicalBg } from "@/components/liora/BotanicalBg";
 import { MosaicDivider } from "@/components/liora/MosaicDivider";
-import lioraWordmark from "@/assets/ACTUAL-FILENAME-HERE";
+import { lioraWordmark } from "@/assets/liora-wordmark.png";
 import { Reveal } from "@/components/liora/Reveal";
 
 const nav = [
