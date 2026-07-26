@@ -4,6 +4,7 @@ import { MosaicDivider } from "@/components/liora/MosaicDivider";
 import { BotanicalBg } from "@/components/liora/BotanicalBg";
 import { Reveal } from "@/components/liora/Reveal";
 import lioraLogo from "@/assets/liora-logo.PNG";
+import lioraLogo from "@/assets/liora-logo.png";
 
 export const Route = createFileRoute("/")({
   component: Index,
