@@ -2,7 +2,6 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { MosaicDivider } from "@/components/liora/MosaicDivider";
 import { BotanicalBg } from "@/components/liora/BotanicalBg";
-import lioraWordmark from "@/assets/liora-wordmark.png";
 import { Reveal } from "@/components/liora/Reveal";
 import lioraLogo from "@/assets/liora-logo.PNG";
 
@@ -23,11 +22,9 @@ function Navbar() {
     <header className="absolute inset-x-0 top-0 z-40">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-5 sm:px-8 sm:py-6">
         <a href="#top" className="flex flex-col leading-none">
-          <img
-  src={lioraWordmark}
-  alt="Liora by Gabriela"
-  className="h-12 w-auto sm:h-14"
-/>
+          <span className="font-display text-2xl text-[#3a2a1f]">
+            Liora
+          </span>
           <span className="mt-1 pl-[2px] text-[10px] uppercase tracking-[0.35em] text-[#6b5a4d]">
             By Gabriela
           </span>
@@ -92,7 +89,9 @@ function Hero() {
           >
             <div className="absolute inset-3 rounded-full border border-[#faf6f0]/40" />
             <div className="flex flex-col items-center leading-none text-[#2a1e15]">
-              <LioraWordmark className="text-[64px] sm:text-[84px]" color="#2a1e15" />
+              <span className="font-display text-[64px] sm:text-[84px] text-[#2a1e15]">
+                Liora
+              </span>
               <span className="mt-3 text-[10px] uppercase tracking-[0.45em] text-[#2a1e15]/80">
                 By Gabriela
               </span>
@@ -451,7 +450,9 @@ function Footer() {
   return (
     <footer className="border-t border-[#e6dcc9] py-10">
       <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-5 sm:flex-row sm:px-8">
-        <LioraWordmark className="text-xl" color="#3a2a1f" />
+        <span className="font-display text-xl text-[#3a2a1f]">
+          Liora
+        </span>
         <p className="text-[10px] uppercase tracking-[0.35em] text-[#6b5a4d]">
           © {new Date().getFullYear()} Liora by Gabriela · Puerto Rico
         </p>
