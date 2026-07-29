@@ -170,7 +170,7 @@ function ProjectThumb({ gradient }: { gradient: string }) {
 
 function Projects() {
   return (
-    <section id="projects" className="pt-8 sm:pt-14 pb-6">
+    <section id="projects" className="pt-8 sm:pt-14 pb-10">
       <SectionLabel>Projects</SectionLabel>
       <div className="mx-auto mt-10 grid max-w-7xl grid-cols-1 gap-8 px-5 sm:grid-cols-2 sm:px-8 lg:grid-cols-3 lg:gap-10">
         {projects.map((p, i) => (
