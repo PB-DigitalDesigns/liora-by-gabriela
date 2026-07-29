@@ -5,6 +5,7 @@ import { BotanicalBg } from "@/components/liora/BotanicalBg";
 import { Reveal } from "@/components/liora/Reveal";
 import lioraLogo from "@/assets/liora-logo.png";
 import lioraWordmark from "@/assets/liora-wordmark.png";
+import aboutBg from "@/assets/aboutbg.png";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -204,7 +205,17 @@ function About() {
   className="relative pt-10 pb-20 sm:pt-14 sm:pb-24"
   style={{ backgroundColor: "#A3A670" }}
 >
-      <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-5 sm:px-8 lg:grid-cols-2 lg:gap-20">
+     <div
+       className="absolute inset-0"
+       style={{
+          backgroundImage: `url(${aboutBg})`,
+          backgroundRepeat: "repeat",
+          backgroundSize: "500px",
+          opacity: 0.08,
+        }}
+      />
+
+     <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-5 sm:px-8 lg:grid-cols-2 lg:gap-20">
         <Reveal className="flex justify-center">
           <div className="relative flex aspect-square w-full max-w-md items-center justify-center rounded-[36px] bg-[#faf6f0] p-6 shadow-[0_25px_60px_-25px_rgba(0,0,0,0.35)]">
             <div className="absolute inset-6 rounded-[24px] border-2 border-dashed border-[#3B4D3A]/25" />
