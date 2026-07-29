@@ -447,7 +447,7 @@ function Footer() {
        <img
          src={lioraWordmark}
          alt="Liora by Gabriela"
-         className="h-8 w-auto"
+         className="h-12 w-auto"
         />
         <p className="text-[10px] uppercase tracking-[0.35em] text-[#6b5a4d]">
           © {new Date().getFullYear()} Liora by Gabriela · Puerto Rico
