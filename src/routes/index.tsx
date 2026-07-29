@@ -4,6 +4,7 @@ import { MosaicDivider } from "@/components/liora/MosaicDivider";
 import { BotanicalBg } from "@/components/liora/BotanicalBg";
 import { Reveal } from "@/components/liora/Reveal";
 import lioraLogo from "@/assets/liora-logo.png";
+import lioraWordmark from "@/assets/liora-wordmark.png";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -443,9 +444,11 @@ function Footer() {
   return (
     <footer className="border-t border-[#e6dcc9] py-10">
       <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-5 sm:flex-row sm:px-8">
-        <span className="font-display text-xl text-[#3a2a1f]">
-          Liora
-        </span>
+       <img
+         src={lioraWordmark}
+         alt="Liora by Gabriela"
+         className="h-8 w-auto"
+        />
         <p className="text-[10px] uppercase tracking-[0.35em] text-[#6b5a4d]">
           © {new Date().getFullYear()} Liora by Gabriela · Puerto Rico
         </p>
