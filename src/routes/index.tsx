@@ -6,6 +6,7 @@ import { Reveal } from "@/components/liora/Reveal";
 import lioraLogo from "@/assets/liora-logo.png";
 import lioraWordmark from "@/assets/liora-wordmark.png";
 import aboutBg from "@/assets/aboutbg.png";
+import aboutPhoto from "@/assets/about-photo.jpg";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -219,12 +220,12 @@ function About() {
         <Reveal className="flex justify-center">
           <div className="relative flex aspect-square w-full max-w-md items-center justify-center rounded-[36px] bg-[#faf6f0] p-6 shadow-[0_25px_60px_-25px_rgba(0,0,0,0.35)]">
             <div className="absolute inset-6 rounded-[24px] border-2 border-dashed border-[#3B4D3A]/25" />
-            <img
-              src={lioraLogo}
-              alt="Liora monogram — stylized L with lily flower inside a Puerto Rican tile-inspired ornamental frame"
-              className="relative h-[85%] w-[85%] object-contain"
-              loading="lazy"
-            />
+           <img
+             src={aboutPhoto}
+             alt="About Liora"
+             className="relative h-full w-full rounded-[24px] object-cover"
+             loading="lazy"
+             />
           </div>
         </Reveal>
 
